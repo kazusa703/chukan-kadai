@@ -1,0 +1,80 @@
+/* 授業 web-03 / web-04 で習った範囲だけ（色・余白・border・font・flex）。背景は白。 */
+
+body {
+  background-color: #ffffff;
+  color: #222222;
+  font-size: 16px;
+  padding: 16px;
+}
+
+/* --- 見出し・説明 --- */
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* --- セクション共通（枠線なし・余白だけ） --- */
+.section {
+  margin-bottom: 32px;
+}
+
+/* --- 凡例（色の意味） --- */
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.legend-item {
+  display: flex;
+  gap: 6px;
+  padding: 4px;
+}
+.legend-color {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1px solid #999999;
+}
+
+/* --- 都道府県タイル（横並び・折り返し：web-04 の flex-wrap） --- */
+.map {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.tile {
+  width: 92px;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+.tile-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+.tile-num {
+  font-size: 12px;
+  color: #333333;
+}
+
+/* 数が多いほど濃い青（5段階）。色は web-03 と同じ #xxxxxx 指定。 */
+.tile-1 { background-color: #eaf1fb; }
+.tile-2 { background-color: #c4d9f5; }
+.tile-3 { background-color: #8fb8ec; }
+.tile-4 { background-color: #4f8fe0; }
+.tile-5 { background-color: #1f5fc0; color: #ffffff; }
+
+/* 凡例の色見本（タイルと同じ色） */
+.legend-1 { background-color: #eaf1fb; }
+.legend-2 { background-color: #c4d9f5; }
+.legend-3 { background-color: #8fb8ec; }
+.legend-4 { background-color: #4f8fe0; }
+.legend-5 { background-color: #1f5fc0; }
+
